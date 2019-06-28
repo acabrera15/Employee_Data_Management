@@ -1,0 +1,43 @@
+body {
+    background-color:#EEEEEE;
+}
+.container {
+    background-color:white;
+}
+.header {
+    background-color:black;
+    color:white;
+    margin:auto;
+    text-align:center;
+    padding-top:50px;
+    padding-bottom:50px;
+}
+.section {
+    border-style:solid;
+    border-width:1px;
+    border-color:#224E6A;
+    margin-top:10px;
+    overflow:hidden;
+}
+.section-header {
+    margin-top:10px;
+    margin-bottom:10px;
+    margin:auto;
+    background-color:#224E6A;
+    color:white;
+    padding-top:3px;
+    padding-bottom:3px;
+    padding-right:3px;
+    text-align:center;
+}
+.table {
+    margin-bottom:100px;
+}
+.btn {
+    background-color:#224E6A;
+    border-color:black;
+}
+Collapse
+
+
+

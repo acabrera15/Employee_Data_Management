@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="./assets/styles/style.css">
+
+  </head>
+
+
+  <body>
+    <div class="container">
+      <div class="row header">
+        <div class="col-md-12">
+          <h1>Employee Data Management</h1>
+          <h3>A Comprehensive Directory of Employee Billable Hours</h3>
+        </div>
+      </div>
+      <div class="section">
+        <div class="row">
+          <div class="col-md-12 section-header">
+            Current Employees
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <table class="table table-hover">
+              <thead>
+                <tr>
+                  <th scope="col">Employee Name</th>
+                  <th scope="col">Role</th>
+                  <th scope="col">Start Date</th>
+                  <th scope="col">Months Worked</th>
+                  <th scope="col">Monthly Rate ($)</th>
+                  <th scope="col">Total Billed ($)</th>
+                </tr>
+              </thead>
+              <tbody id="employees"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="row">
+          <div class="col-md-12 section-header">
+            Add Employees
+          </div>
+        </div>
+        <div class="row"></div>
+        <div class="col-md-12">
+          <form>
+            <div class="form-group">
+              <label for="exampleFormControlInput1">Employee Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="employeeName"
+                placeholder="Name"
+              />
+              <label for="exampleFormControlInput1">Role</label>
+              <input
+                type="numbertext"
+                class="form-control"
+                id="role"
+                placeholder="CEO"
+              />
+              <label for="exampleFormControlInput1">Start Date</label>
+              <input
+                type="date"
+                class="form-control"
+                id="startDate"
+                placeholder=""
+              />
+              <label for="exampleFormControlInput1">Monthly Rate</label>
+              <input type="number" class="form-control" id="monthlyRate" />
+            </div>
+          </form>
+          <input
+            class="btn btn-primary"
+            type="submit"
+            value="Submit"
+            id="submit"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!--jQuery CDN-->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+
+    <!--Firebase CDN-->
+    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+
+    <!--momentJS CDN-->
+    <script src="https://momentjs.com/downloads/moment.js"></script>
+
+    <!--custom JS-->
+    <script src="./assets/javascript/javascript.js"></script>
+  </body>
+</html>
